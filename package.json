@@ -1,0 +1,25 @@
+{
+  "name": "geography-quiz-video",
+  "version": "1.0.0",
+  "description": "A geography quiz video created with Remotion",
+  "scripts": {
+    "start": "remotion preview",
+    "build": "remotion render Main out/video.mp4",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx,js,jsx && tsc"
+  },
+  "dependencies": {
+    "@remotion/cli": "^3.3.101",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@remotion/eslint-config": "^3.3.101",
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8",
+    "typescript": "^4.9.4",
+    "@remotion/renderer": "^3.3.101"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/web": "^0.0.86"
+  }
+}
