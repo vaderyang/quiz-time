@@ -20,8 +20,8 @@ export const QuizTimeHeadline: React.FC = () => {
       lineHeight: '1',
       opacity,
     }}>
-      <div>冷知识问答</div>
-      <div style={{color: '#FFD700'}}>挑战</div>
+      <div>Quiz Time</div>
+      <div style={{color: '#FFD700'}}>Challenge</div>
     </div>
   );
 };

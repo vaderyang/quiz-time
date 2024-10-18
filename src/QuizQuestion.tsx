@@ -1,10 +1,4 @@
-/**
- * @file QuizQuestion.tsx
- * @author Vader Yang <vader.yang@gmail.com>
- * @copyright Copyright (c) 2024 Vader Yang
- * @license Apache-2.0
- */
-
+import React from 'react';
 import {AbsoluteFill, useCurrentFrame, interpolate, spring} from 'remotion';
 import {Countdown} from './Countdown';
 import {QuizTimeHeadline} from './QuizTimeHeadline';
@@ -27,7 +21,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
     extrapolateRight: 'clamp',
   });
 
-  const countdownDuration = 150; // 3 seconds at 30 fps
+  const countdownDuration = 150; // 5 seconds at 30 fps
   const revealDuration = 60; // 2 seconds at 30 fps
   const totalDuration = countdownDuration + revealDuration;
 
@@ -79,7 +73,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
           let color = '#333';
 
           if (isRevealPhase && isCorrectAnswer) {
-            backgroundColor = '#008000'; // Darker Green
+            backgroundColor = '#FF8C00'; // Dark Orange
             color = 'white';
           }
 

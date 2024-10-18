@@ -27,7 +27,8 @@ const Intro: React.FC = () => {
       opacity,
     }}>
       <QuizTimeHeadline />
-      你能做对几道题？
+      How many questions 
+      <br/>can you answer correctly?
     </AbsoluteFill>
   );
 };
@@ -49,7 +50,7 @@ const Outro: React.FC = () => {
       textAlign: 'center',
     }}>
       <QuizTimeHeadline />
-      你答对了多少题？
+      How many did you get right?
     </AbsoluteFill>
   );
 };

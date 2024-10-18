@@ -1,1 +1,6 @@
 node_modules
+out/
+
+# Optional: ignore common build and temporary files
+*.log
+.DS_Store
