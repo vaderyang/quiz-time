@@ -1,3 +1,10 @@
+/**
+ * @file Background.tsx
+ * @author Vader Yang <vader.yang@gmail.com>
+ * @copyright Copyright (c) 2024 Vader Yang
+ * @license Apache-2.0
+ */
+
 import {AbsoluteFill} from 'remotion';
 
 export const Background: React.FC = () => {

@@ -1,3 +1,10 @@
+/**
+ * @file Countdown.tsx
+ * @author Vader Yang <vader.yang@gmail.com>
+ * @copyright Copyright (c) 2024 Vader Yang
+ * @license Apache-2.0
+ */
+
 import React from 'react';
 import {useCurrentFrame, interpolate} from 'remotion';
 
@@ -18,14 +25,14 @@ export const Countdown: React.FC<CountdownProps> = ({totalFrames}) => {
       bottom: '40px',
       left: '50%',
       transform: 'translateX(-50%)',
-      width: '150px',
-      height: '150px',
+      width: '200px',
+      height: '200px',
       borderRadius: '50%',
       backgroundColor: 'white',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      fontSize: '80px',
+      fontSize: '120px',
       fontWeight: 'bold',
       color: '#333',
       boxShadow: '0 5px 0 rgba(0,0,0,0.2)',
@@ -37,10 +44,11 @@ export const Countdown: React.FC<CountdownProps> = ({totalFrames}) => {
         width: 'calc(100% - 10px)',
         height: 'calc(100% - 10px)',
         borderRadius: '50%',
-        border: '10px solid #4CAF50',
+        border: '15px solid #00FF00',
         borderRightColor: 'transparent',
         transform: `rotate(${progress * 360}deg)`,
         transition: 'transform 0.1s linear',
+        opacity: 1,
       }} />
       {countdown}
     </div>

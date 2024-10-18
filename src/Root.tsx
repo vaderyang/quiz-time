@@ -1,11 +1,20 @@
+/**
+ * @file Root.tsx
+ * @author Vader Yang <vader.yang@gmail.com>
+ * @copyright Copyright (c) 2024 Vader Yang
+ * @license Apache-2.0
+ */
+
 import {Composition} from 'remotion';
 import {Main} from './Main';
+import questions from './questions.json';
 
 export const RemotionRoot: React.FC = () => {
-  // Calculate the total duration for all questions
-  const questionDuration = 210; // 7 seconds per question
-  const totalQuestions = 10;
-  const totalDuration = questionDuration * totalQuestions;
+  const introDuration = 60; // 2 seconds at 30 fps
+  const outroDuration = 60; // 2 seconds at 30 fps
+  const questionDuration = 180; // 6 seconds per question
+  const totalQuestions = questions.length;
+  const totalDuration = introDuration + (questionDuration * totalQuestions) + outroDuration;
 
   return (
     <>

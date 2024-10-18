@@ -1,5 +1,13 @@
+/**
+ * @file QuizQuestion.tsx
+ * @author Vader Yang <vader.yang@gmail.com>
+ * @copyright Copyright (c) 2024 Vader Yang
+ * @license Apache-2.0
+ */
+
 import {AbsoluteFill, useCurrentFrame, interpolate, spring} from 'remotion';
 import {Countdown} from './Countdown';
+import {QuizTimeHeadline} from './QuizTimeHeadline';
 
 interface QuizQuestionProps {
   question: string;
@@ -19,7 +27,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
     extrapolateRight: 'clamp',
   });
 
-  const countdownDuration = 150; // 5 seconds at 30 fps
+  const countdownDuration = 150; // 3 seconds at 30 fps
   const revealDuration = 60; // 2 seconds at 30 fps
   const totalDuration = countdownDuration + revealDuration;
 
@@ -37,20 +45,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
         padding: '20px',
       }}
     >
-      <div style={{
-        position: 'absolute',
-        top: '40px',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        fontSize: '120px',
-        fontWeight: 'bold',
-        textAlign: 'center',
-        textShadow: '4px 4px 0px #000000',
-        lineHeight: '1',
-      }}>
-        <div>QUIZ</div>
-        <div style={{color: '#FFD700'}}>TIME</div>
-      </div>
+      <QuizTimeHeadline />
       <div style={{
         backgroundColor: 'white',
         borderRadius: '30px',
@@ -60,7 +55,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
         boxShadow: '0 10px 0 rgba(0,0,0,0.2)',
       }}>
         <h2 style={{
-          fontSize: '60px',
+          fontSize: '70px',
           textAlign: 'center',
           marginBottom: '40px',
           color: '#333',
@@ -84,7 +79,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
           let color = '#333';
 
           if (isRevealPhase && isCorrectAnswer) {
-            backgroundColor = '#FFA500'; // Orange
+            backgroundColor = '#008000'; // Darker Green
             color = 'white';
           }
 
@@ -92,7 +87,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
             <div
               key={index}
               style={{
-                fontSize: '48px',
+                fontSize: '60px',
                 marginBottom: '20px',
                 transform: `scale(${scale})`,
                 backgroundColor,
