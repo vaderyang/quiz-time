@@ -14,13 +14,11 @@ Quiz Time generates a dynamic video quiz featuring multiple-choice questions abo
 
 This project demonstrates the power of combining React and Remotion to create engaging, interactive video content.
 
-## Example Preview
+## Generated Video Example 
 
-Check out the Quiz Time example preview video:
-
+Check out the generated Quiz Time example video:
 
 https://github.com/user-attachments/assets/e8f2a6f5-85f5-480b-82ee-1ae257173382
-
 
 
 ## Technologies Used
@@ -28,6 +26,7 @@ https://github.com/user-attachments/assets/e8f2a6f5-85f5-480b-82ee-1ae257173382
 - React
 - Remotion
 - TypeScript
+- bolt.new 
 
 ## Installation
 
