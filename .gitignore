@@ -1,6 +1,6 @@
 node_modules
 out/
-
+questions_backup.json
 # Optional: ignore common build and temporary files
 *.log
 .DS_Store
