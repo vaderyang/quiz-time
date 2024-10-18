@@ -18,7 +18,8 @@ This project demonstrates the power of combining React and Remotion to create en
 
 Check out the Quiz Time example preview video:
 
-[![Quiz Time Preview](https://img.youtube.com/vi/rt04_rvWVC8/0.jpg)](https://www.youtube.com/watch?v=rt04_rvWVC8)
+
+https://github.com/user-attachments/assets/e8f2a6f5-85f5-480b-82ee-1ae257173382
 
 
 
