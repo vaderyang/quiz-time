@@ -14,11 +14,13 @@ Quiz Time generates a dynamic video quiz featuring multiple-choice questions abo
 
 This project demonstrates the power of combining React and Remotion to create engaging, interactive video content.
 
-Example video:
+## Example Preview
 
-![Quiz Time Preview](https://github.com/vaderyang/quiz-time/assets/example/video.mp4?raw=true)
+Check out the Quiz Time example preview video:
 
-You can preview this video directly on the GitHub page. If the video doesn't play automatically, you may need to click on it to start playback or download it to view locally.
+[![Quiz Time Preview](https://img.youtube.com/vi/rt04_rvWVC8/0.jpg)](https://www.youtube.com/watch?v=rt04_rvWVC8)
+
+
 
 ## Technologies Used
 
