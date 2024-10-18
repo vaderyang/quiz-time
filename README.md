@@ -52,12 +52,30 @@ To set up Quiz Time locally, follow these steps:
 
 To run Quiz Time on your local machine:
 
-1. Start the Remotion preview:
+1. Start Remotion to preview and edit the video:
    ```
    npm start
    ```
 
 2. Open your browser and visit `http://localhost:3000` to view the application.
+
+
+## Video Generation
+
+To generate the quiz video:
+
+1. In the browser, render the video by clicking the menu File -> Render.
+   Options can be specified in the Render Settings.
+
+2. In the command line, run the following command to render the video:
+   ```
+   npm run build
+   ```
+The rendered video will be saved as `out/video.mp4` in your project directory.
+You can customize the output format, resolution, and other parameters by modifying the `build` script in `package.json` or by using additional Remotion CLI options.
+
+For more advanced rendering options and configurations, please refer to the [Remotion documentation](https://www.remotion.dev/docs/).
+
 
 ## License
 
