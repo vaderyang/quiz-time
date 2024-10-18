@@ -16,7 +16,7 @@ This project demonstrates the power of combining React and Remotion to create en
 
 Example video:
 
-![Quiz Time Preview](https://github.com/vaderyang/quiz-time/assets/example/video.mp4)
+![Quiz Time Preview](https://github.com/vaderyang/quiz-time/assets/example/video.mp4?raw=true)
 
 You can preview this video directly on the GitHub page. If the video doesn't play automatically, you may need to click on it to start playback or download it to view locally.
 
